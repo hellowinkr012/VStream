@@ -1,0 +1,23 @@
+#logo {width: min(100%,200px);}
+#logo-animation-one {
+    background: var(--blue-light-1);
+    animation: r-rotate-clockwise 8s ease-in 0s infinite ;
+  }
+#logo-animation-other {
+    background: var(--blue);
+    animation: rotate-clockwise 8s ease-in 0s infinite ;
+}
+@keyframes rotate-clockwise {
+    30% {translate: 0% -100%;}
+    60% {translate: -100% -100%;}
+    75% {translate: -100% 100%;}
+    95% {translate: 0% 100%;}
+    100% {translate: 0% 0%; }
+}
+@keyframes r-rotate-clockwise {
+    30% {translate: 0% 100%;}
+    60% {translate: 100% 100%;}
+    75% {translate: 100% -100%;}
+    95% {translate: 0% -100%;}
+    100% {translate: 0% 0%; }
+}

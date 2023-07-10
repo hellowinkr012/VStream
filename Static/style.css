@@ -1,0 +1,205 @@
+/* Import new google font */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=Open+Sans&family=Poppins:wght@300&display=swap');
+
+/* Global changes */
+* {
+    box-sizing: border-box;
+}
+/* Intial vars */
+:root {
+    --heading-size:25px;
+    --content-size:18px;
+
+    --padding:10px;
+    --margin:15px;
+}
+
+/* Font */
+.open-sans-font {
+    font-family: 'Open Sans', sans-serif;
+}
+.poppins-sans-serif-font {
+    font-family: 'Poppins', sans-serif;
+}
+/* FONT SIZE */
+.heading-font {
+    font-size: var(--heading-size);
+}
+.heading-font-2xl {
+    font-size: calc(var(--heading-size)*1.75);
+}
+.heading-font-xl {
+    font-size: calc(var(--heading-size)*1.5);
+}
+.heading-font-l {
+    font-size: calc(var(--heading-size)*1.25);
+}
+.heading-font-s {
+    font-size: calc(var(--heading-size)*0.75);
+}
+.heading-font-xs {
+    /* 12.5px */
+    font-size: calc(var(--heading-size)*0.5);
+}
+.content-font {
+    font-size: var(--content-size);
+}
+.content-font-2xs {
+    font-size: calc(var(--content-size)/1.45);
+}
+.content-font-3xs {
+    font-size: calc(var(--content-size)/1.6);
+}
+.content-font-4xs {
+    font-size: calc(var(--content-size)/1.8);
+}
+.content-font-xs {
+    font-size: calc(var(--content-size)/1.25);
+}
+
+/* SPACE MEASURE */
+.full-h {height: 100%;}
+.full-w {width:100%;}
+.page-h {height: 100vh;}
+.page-w  {width: 100vw;}
+.w-25 {width: 25%;}
+.w-50 {width: 50%;}
+
+
+/* Position PROPERTIES */
+.p-relative {position: relative;}
+.p-absolute {position: absolute;}
+.p-fixed { position:fixed;}
+
+/* OVERFLOW PROPERTIES  */
+.overflow-hidden {overflow: hidden;}
+.overflow-x-hidden {overflow-x: hidden;}
+.overflow-y-hidden {overflow-y:  hidden;}
+.overflow-scroll {overflow: scroll;}
+
+/* FLEX PROPERTIES JUSTIFY */
+.j-center {justify-content: center;}
+.j-between {justify-content: space-between;}
+.j-around {justify-content: space-around;}
+.j-evenly {justify-content: space-evenly;}
+
+/* FLEX PROPERTIES ALIGN ITEMS */
+.items-between {align-items : space-between;}
+.items-center {align-items :center;}
+.items-around {align-items :space-around;}
+.items-evenly {align-items :space-evenly;}
+
+/* FLEX PROPERTIES ALIGN CONTENT */
+.content-between {align-content : space-between;}
+.content-stretch  {align-content : stretch;}
+
+/* BORDER BACKGROUND */
+.no-border {border: 0px solid transparent;}
+
+.no-background {background: transparent;}
+
+/* PADDING / MARGIN  */
+.p-1 {padding: calc(var(--padding) * 1);}
+.p-2 {padding: calc(var(--padding) * 1.25);}
+.p-4 {padding: calc(var(--padding)*2);}
+.-p-2 {padding: calc(var(--padding)/1.25);}
+.-p-4 {padding: calc(var(--padding)/2); }
+.p-0 {padding: 0px;}
+.spacing-0 {padding: 0px;margin: 0px;}
+
+/* zIndex */
+.z-1 {z-index: 2;}
+.z-2 {z-index: 4;}
+.z-3 {z-index: 6;}
+.z-4 {z-index: 8;}
+.z-6 {z-index: 12;}
+
+/* TRANSITIONS */
+.timing-ease-in {transition-timing-function:ease-in;}
+.timing-ease-out {transition-timing-function:ease-out ; }
+.timing-ease-in-out  {transition-timing-function:ease-in-out ;}
+
+.tr-1 {transition: 0.15s 0s linear;}
+.tr-2 {transition: 0.25s 0s linear;}
+.tr-4 {transition: 0.45s 0s linear;}
+.tr-6 {transition: 0.75s 0s linear;}
+.tr-8 {transition: 1s 0s linear;}
+
+
+/*Relative measurements */
+.left-0 {left: 0px;}
+.right-0 {right: 0px;}
+.-left-100 {left: -100%;}
+.-left-50 {left: -50%;}
+.-right-50 {right: -50%;}
+.-left-100 {left: -100%;}
+
+.top-0 {top: 0px;}
+.bottom-0 {bottom : 0px;}
+.top-100 {top: 100%;}
+
+.top-left {top: 0px;left: 0vh;}
+.top-right {top: 0px;right: 0vh;}
+.bottom-right-corner {top: 100%; left: 100%;}
+
+/* Transforms */
+.t-x-100 {transform: translateX(100%);}
+.t-x-50 {transform: translateX(50%);}
+.t-y-100 {transform: translateY(100%);}
+.t-y-50 {transform: translateY(50%);}
+.-t-x-100 {transform: translateX(-100%);}
+.-t-x-50 {transform: translateX(-50%);}
+.-t-y-100 {transform: translate(0%,-100%);}
+.-t-y-50 {transform: translateY(-50%);}
+/* BOX SHADOWS */
+
+.shadow-md {box-shadow:0px 5px 15px 0px var(--blue-light-2)}
+
+/* DEFAULT CUSTOM ELEMNT */
+.default-button,.default-input {
+    outline: none;
+}
+.default-list {
+    padding: 0px;
+    list-style-type: none;
+}
+
+/* Custom REQUIREMENTS FOR MENU */
+.menu-show menu {
+    transform: translate(0%,0%);
+}
+.menu-show-reveal menu {transform: scale(0); }
+.menu-show-reveal:hover menu {animation: reveal-upward 0.25s ease-in 0.1s 1 forwards;}
+
+.link-1 {
+    background: transparent;
+    color: var(--white-grey);
+}
+.link-1:hover {
+    color: var(--white);
+}
+/* FOR A LARGE WIDE MEASURE IN RECENT MEDIA VIEW SECTION */
+.wide-section-landscape {
+    flex : 0 0 100%;
+}
+
+/* ANIMATIONS */
+@keyframes reveal-upward {
+    100% {
+        transform: scale(1);
+        opacity: 100%;
+    }
+}
+@keyframes reveal-downward {
+    100% {
+        top: 100%;
+        transform: scale(1);
+        opacity: 100%;
+    }
+}
+/* GLOBAL SCROLLBAR COLORING CHANGES */
+::-webkit-scrollbar {background: var(--dark-blue);}
+::-webkit-scrollbar-thumb {background: var(--white); }
+::-webkit-scrollbar-thumb:hover {background: var(--white-grey); }
+::-webkit-scrollbar-corner { background: var(--dark-blue);
+}
